@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Machine</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="wrapper">
+ <div class="wrapper-inner">
+   <div id="quotebtn"></div>
+ </div>
+  <svg width="800" height="550">
+    <!--area-->
+    <rect width="800" height="550" fill="#333333" stroke-width="5" stroke="#666633"/>
+    <!--moon-->
+    <circle cx="70" cy="70" r="40" fill="khaki" stroke="darkkhaki" stroke-width="2"/>
+     <circle cx="90" cy="60" r="40" fill="#333333" stroke="darkkhaki" stroke-width="2"/>
+     <circle cx="93" cy="58" r="43" fill="#333333" stroke="none" stroke-width="2"/>
+    <!--house-->
+    <path d="M400 400 L425 340 L450 400 
+             M400 400 L400 440 L450 440 L450 400Z 
+             M450 400 L550 400 L550 440 L550 440 L450 440
+             M425 340 L520 340 L550 400 L450 400Z
+             M510 340 L510 328 L519 328 L519 340 Z" stroke="#666633" stroke-width="2"/><!--door-->
+    <path d= "M415 440 L415 420 L430 420 L430 440Z"  stroke="#666633" stroke-width="2" fill="#330000"/><!--window below-->
+    <path id="window" d= "M490 425 L490 410 L520 410 L520 425Z " stroke="#666633" stroke-width="2"/>
+  <!--window bars M490 418 L520 418-->
+    <path d="M500 424 L500 411 M510 424 L510 411 " stroke="#000" stroke-width="2"/>
+    <!--ground-->
+    <path d="M320 547 L320 440 L797 440 L797 547 Z " stroke="#666633" stroke-width="1.5" fill="#160b03" />
+   <!-- tree-->
+    <!-- trunk-->
+    <path  d="M647 440 L647 340 M 649 340 L649 440" stroke="#000" stroke-width="2"/>
+    <circle cx="650" cy="300" r="40" fill="#004d00" stroke="#003300" stroke-width="2"/>
+    <circle cx="620" cy="350" r="30" fill="#004d00" stroke="#003300" stroke-width="2"/>
+    <circle cx="650" cy="260" r="20" fill="#004d00" stroke="#003300" stroke-width="2"/>
+    <circle cx="675" cy="350" r="30" fill="#004d00" stroke="#003300" stroke-width="2"/>
+    <!--hide-->
+    <circle cx="648" cy="330" r="35" fill="#004d00" stroke="none" stroke-width="2"/>
+    <circle cx="650" cy="273" r="20" fill="#004d00" stroke="none" stroke-width="2"/>
+    <!---circle stars--->
+    
+    <circle cx="650" cy="40" r="1" fill="khaki" fill-opacity="1"/>
+    <circle cx="560" cy="40" r="1" fill="khaki" fill-opacity="1"/>
+    <circle cx="460" cy="40" r="1" fill="khaki" fill-opacity="1" />
+    <circle cx="360" cy="40" r="1" fill="pink"fill-opacity="1"/>
+    <circle cx="250" cy="40" r="1" fill="pink" fill-opacity="0.8"/>
+    <circle cx="160" cy="40" r="1" fill="pink"fill-opacity="0.7"/>
+    <!--text stars--->
+    <text id="st" x="758" y="70">
+      <tspan x="600" y="90">&star;</tspan>
+      <tspan x="500" y="40">&star;</tspan>
+      <tspan x="200" y="90">&star;</tspan>
+      <tspan x="300" y="40">&star;</tspan>
+      <tspan x="400" y="90">&star;</tspan>
+      <tspan x="100" y="40">&star;</tspan>
+      <tspan x="700" y="40">&star;</tspan>
+    </text> 
+    <!-- water--->
+    <path id="water" d="M03 470 C 20 500, 60 500, 100 470 
+             M100 470 C 120 500, 180 500, 220 470
+             M220 470 C 220 500, 280 500, 320 470
+             M320 470 L320 548 L03 548 L03 470" fill="#000033" stroke="#666633" stroke-width="1.8"/>
+    
+    <!--other end-->
+    <path d="M03 440 L30 440 L30 548 L03 548Z" stroke="#666633" stroke-width="2" fill="#160b03" />
+    <!-- wrap text & rect-->
+    
+    <!--wrapper for quote-->
+    <!--quote text-->
+    <text id="setQuote" x="150" y="160">
+      <tspan id="q11" x="20" y="170"></tspan>
+      <tspan id="q12" x="33" y="210"></tspan>
+      <tspan id="q13" x="33" y="250"></tspan>
+      <tspan id="q14" x="33" y="290"></tspan>
+      <tspan id="q15" x="33" y="330"></tspan> 
+     <tspan id="q17" x="33" y="370"></tspan>  
+    </text>
+<!--quote author--->
+     <!-- <text id="q16" x="20" y="380"></text> -->
+    <!--quote button-->
+    <text id="getQuote" x="480" y="510">Get Quote 
+      <tspan id="exclaim">&#10083;</tspan></text>
+    <!-- twitter-->
+     <!-- twitter-->
+    <g>
+    <a id="twitter-link" title="tweet this quote.." target="_blank">
+    <text id="twitter" x="140" y="460" fill="#0084b4">
+    <tspan transform="rotate(-10 140,460)">&#xf099;</tspan>
+    <tspan id="music" x="180" y="430">&#9835;</tspan>    
+    </text></a>
+    </g>
+    <!---stone --->
+    <ellipse id="stone1" cx="720" cy="433" rx="20" ry="5" fill="#160b03"
+             stroke="black" stroke-width="1"/>
+     <ellipse id="stone2" cx="760" cy="433" rx="20" ry="5" fill="#160b03"
+             stroke="black" stroke-width="1"/>
+     <ellipse id="stone3" cx="740" cy="425" rx="20" ry="5" fill="#160b03"
+             stroke="black" stroke-width="1"/>
+    <ellipse id="stone4" cx="740" cy="417" rx="10" ry="3" fill="#160b03"
+             stroke="black" stroke-width="1"/>
+    <!----->
+  </svg>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
